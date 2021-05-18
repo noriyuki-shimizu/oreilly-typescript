@@ -1,3 +1,4 @@
+// code エディタなどで、どのように推論されるかを確認すること
 let a = 1042
 let b = 'apples and oranges'
 const c = 'apple'
