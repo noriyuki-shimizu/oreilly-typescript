@@ -1,0 +1,25 @@
+{
+  "name": "oreilly-typescript",
+  "version": "1.0.0",
+  "description": "[O'Reilly TypeScript](https://www.oreilly.co.jp/books/9784873119045/)の参考書におけるアウトプットをまとめたプロジェクトになる（何かのシステム開発ではない）",
+  "main": "index.js",
+  "scripts": {
+    "check": "tsc",
+    "exec": "ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noriyuki-shimizu/oreilly-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noriyuki-shimizu/oreilly-typescript/issues"
+  },
+  "homepage": "https://github.com/noriyuki-shimizu/oreilly-typescript#readme",
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
