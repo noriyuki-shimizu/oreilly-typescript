@@ -7,6 +7,7 @@
   * TypeScript が何かを unknown と推論することはない。明示的な型アノテーションが必要  
   * unknown 型の値と他の値を比較することができる  
   * unknown 値が特定の型であることを想定した事柄は行えない。初めに、値が本当にその型であることを TypeScript に示す必要がある  
+  * 全ての型のスーパータイプ  
 
 * number  
   * 大きい数値をわかりやすく表現するように心がけること
@@ -49,3 +50,23 @@ type A = {
 |  Symbol('a')  |  はい  |  いいえ  |  はい  |
 |  null  |  いいえ  |  いいえ  |  いいえ  |
 |  undefined  |  いいえ  |  いいえ  |  いいえ  |
+
+* array  
+```ts
+// tupple
+const a: [number, string]
+const b: [number, string?]
+const c: [number, ...string[]]
+
+// readonly
+const a: readonly string[]
+const b: ReadonlyArray<string>
+const c: Readonly<string[]>
+```
+
+* void  
+  * 明示的に何も返さない関数の戻り値の型  
+
+* never  
+  * 決して戻ることのない関数の型（例外をスローする関数や、永久に実行される関数など）  
+  * 全ての型のサブタイプである
